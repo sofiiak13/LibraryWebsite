@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Sonya's Project 2</title>
+        <link href = "style-project2.css" type = "text/css" rel="stylesheet">
+        <script src="project2.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+</html>
+<body>
+    <a href="#" class="icon">
+        <span class="bars"> </span>
+        <span class="bars"> </span>
+        <span class="bars"> </span>
+    </a>
+    
+    <h2> Open Library - search for your favourite book here</h2>
+    <div class="menu">
+        <ul>
+            <li onclick="backToSearch()"><a href="#">Main Search</a></li>
+            <li onclick="randomBook()"><a href="#">Choose a Random Book</a></li>
+        </ul>
+    </div>
+
+    <div class="mainSearch">
+        <div class="radioButton">
+            <form onchange="button_selected()" id="radio">
+                <input type="radio" name="search_choice" value="Title" selected>Search by title<br>
+                <input type="radio" name="search_choice" value="Author">Search by author<br>
+                <input type="radio" name="search_choice" value="Genre">Search by genre<br>
+            
+                <br>
+              </form>
+        </div>
+        <div class="byTitle">
+            <input id="title_input" type="text" placeholder="Enter book title">
+        </div>
+        <div class ='byAuthor'>
+            <input id="author_input" type="text" placeholder="Enter author">
+        </div>
+        <div class="byGenre">
+            <input id="genre_input" type="text" placeholder="Enter genre">
+        </div>
+        <button onclick="getJSON()">Submit</button>
+    </div>
+   <div class="display">
+        <h3 id ="title"></h3>
+        <h5>by </h5>
+        <p id="author"></p>
+        <div class="mainBox">
+            <img id="cover"/> 
+            <div class="textBox">
+                <h5>Genre: </h5>
+                <p id="genre"> </p>
+                <h5>First published: </h5>
+                <p id="date"></p>
+                <h5>Average rating: </h5>
+                <p id="rating"> </p>
+                <div class="stars">
+                    <img id="star1" src="star.png">
+                    <img id="star2" src="star.png">
+                    <img id="star3" src="star.png">
+                    <img id="star4" src="star.png">
+                    <img id="star5" src="star.png">
+                </div>
+                
+                <h5 id="heading">Description: </h5>
+                <p id="description"></p>
+            </div>
+        </div>
+   </div>
+        
+    
+</body>
