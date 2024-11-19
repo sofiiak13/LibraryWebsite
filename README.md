@@ -1,6 +1,6 @@
 # LibraryWebsite
 
-Please download all the files and double click on project2.html to open the website. Then, you will see an search bar prompting you to enter a book title, author or genre (depending on what radio button you choose). 
+Please download all the files and double click on library.html to open the website. Then, you will see an search bar prompting you to enter a book title, author or genre (depending on what radio button you choose). 
 
 After you click "Submit" button, you will see a title, cover, rating and other information about this book. 
 If you hover over rating stars you will see a little animation. 
